@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Home Page - Web Development Certificate">
+  <meta name="author" content="Daniel Israel Tudela Pacheco">
+  <title>Student Home Page</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="./styles/small.css">
+  <link rel="stylesheet" href="./styles/large.css">
+
+  <!-- JS -->
+  <script src="./scripts/navigation.js" defer></script>
+  <script src="./scripts/date.js" defer></script>
+  <script src="./scripts/courses.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-name">
+      <img src="./images/icons8-website-50.png" alt="Site Logo" class="logo">
+      <span class="site-name">Israel Tudela</span>
+    </div>
+    <button id="menu-button" aria-label="Menu">&#9776;</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <section class="cards">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>I am Daniel Israel Tudela Pacheco, a motivated Software Development student with a background in Mechanical Engineering and over eight years of experience in motorcycle mechanics. I am passionate about building web and mobile applications that solve real-world problems. 
+
+I enjoy learning new technologies, improving my coding skills, and taking on challenges that help me grow as a developer. I have completed multiple web development courses, including frontend and dynamic web fundamentals, and I am eager to apply my knowledge in professional projects.
+
+In addition to programming, I have strong experience managing inventories and warehouse operations, which has strengthened my organizational and problem-solving skills. I am highly adaptable, detail-oriented, and committed to delivering high-quality work.
+</p>
+      </div>
+      <div class="card">
+        <h2>Student Photo</h2>
+        <img src="./images/20231203_215043.jpg" alt="Student Photo">
+      </div>
+    </section>
+
+    <h2 class="center">Web Certificate Courses</h2>
+    <div class="filters">
+      <button id="all-btn">All</button>
+      <button id="cse-btn">CSE</button>
+      <button id="wdd-btn">WDD</button>
+    </div>
+    <section id="courses"></section>
+    <p id="total-credits"></p>
+
+    <div class="social">
+      <a href="https://www.facebook.com/danielisraelt" target="_blank"><img src="./images/icons8-facebook-30.png" alt="Facebook"></a>
+      <a href="https://wa.me/+522225174560" target="_blank"><img src="./images/icons8-whatsapp-30.png" alt="WhatsApp"></a>
+      <a href="https://www.linkedin.com/in/israel-tudela-32a2a5316/" target="_blank"><img src="./images/icons8-linkedin-50.png" alt="LinkedIn"></a>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> | Daniel Israel Tudela Pacheco | Bolivia
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
