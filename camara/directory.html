@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cámara de Comercio - La Paz | Directorio</title>
+  <meta name="description" content="Directorio de miembros de la Cámara de Comercio de La Paz. Encuentra empresas locales, niveles de membresía, contacto y sitio web." />
+  <meta name="author" content="Israel Tudela" />
+
+  <!-- Favicon (SVG) -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph / Facebook meta -->
+  <meta property="og:title" content="Cámara de Comercio - La Paz | Directorio" />
+  <meta property="og:description" content="Directorio de miembros de la Cámara de Comercio de La Paz. Conoce empresas locales y niveles de membresía." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://tu-dominio-o-github.io/camara/directory.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter (opcional) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cámara de Comercio - La Paz | Directorio" />
+  <meta name="twitter:description" content="Directorio de miembros de la Cámara de Comercio de La Paz." />
+  <meta name="twitter:image" content="images/og-image.jpg" />
+
+  <!-- CSS reset (link primero) -->
+  <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="./styles/directorystyle.css" />
+
+</head>
+<body>
+  <!-- Header / navegación -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="directory.html">
+        <img src="favicon.svg" alt="logo camara" class="brand-logo" />
+        <span class="brand-title">Cámara de Comercio - La Paz</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="directory.html" class="active">Directorio</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Descubrir</a></li>
+          <li><a href="#">Únete</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Barra con acciones: búsqueda + toggle vista -->
+  <main class="container main-content">
+    <section class="directory-controls">
+      <div>
+        <label for="search">Buscar miembros:</label>
+        <input id="search" type="search" placeholder="nombre, rubro o dirección" />
+      </div>
+
+      <div class="view-controls" role="region" aria-label="Controles de vista">
+        <button id="gridBtn" aria-pressed="true" title="Ver en cuadrícula">▦ Cuadrícula</button>
+        <button id="listBtn" aria-pressed="false" title="Ver en lista">≡ Lista</button>
+      </div>
+    </section>
+
+    <!-- Contenedor donde se renderizan miembros -->
+    <section id="members" class="members-grid" aria-live="polite">
+      <!-- tarjetas/lista generadas por JS -->
+    </section>
+  </main>
+
+  <!-- Footer consistente -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="contact">
+        <h4>Contacto</h4>
+        <p>Cámara de Comercio - La Paz<br/>
+           Calle Falsa 123, La Paz, Bolivia<br/>
+           Tel: +591 2 1234567<br/>
+           Email: info@camara-lapaz.test
+        </p>
+      </div>
+
+      <div class="about">
+        <h4>Desarrollo</h4>
+        <p>Desarrollado por: <strong>Israel Tudela</strong><br/>
+           Curso: WDD 231<br/>
+           Última modificación: <span id="lastModified">—</span>
+        </p>
+      </div>
+
+      <div class="copyright">
+        <p>© <span id="copyYear"></span> Cámara de Comercio - La Paz</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="./scripts/directoryscript.js"></script>
+</body>
+</html>

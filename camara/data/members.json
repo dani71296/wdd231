@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "Panadería El Andino",
+    "address": "Av. Mariscal Santa Cruz 450",
+    "phone": "+591 2 7654321",
+    "website": "https://panaderia-el-andino.test",
+    "image": "images/biz-1.jpg",
+    "level": 1,
+    "category": "Alimentos y Bebidas",
+    "notes": "Atención 07:00 - 20:00"
+  },
+  {
+    "id": 2,
+    "name": "Taller MotoService",
+    "address": "C. Bolívar 210",
+    "phone": "+591 2 7123456",
+    "website": "https://motoservice.test",
+    "image": "images/biz-2.jpg",
+    "level": 3,
+    "category": "Servicios mecánicos",
+    "notes": "Repuestos y mantenimiento"
+  },
+  {
+    "id": 3,
+    "name": "Librería Andina",
+    "address": "Plaza Murillo 10",
+    "phone": "+591 2 7987654",
+    "website": "https://libreria-andina.test",
+    "image": "images/biz-3.jpg",
+    "level": 2,
+    "category": "Comercio",
+    "notes": "Libros, papelería y material escolar"
+  },
+  {
+    "id": 4,
+    "name": "Café Illimani",
+    "address": "C. Comercio 55",
+    "phone": "+591 2 7012345",
+    "website": "https://cafe-illimani.test",
+    "image": "images/biz-4.jpg",
+    "level": 1,
+    "category": "Gastronomía",
+    "notes": "Café de altura, menú vegano"
+  },
+  {
+    "id": 5,
+    "name": "Agencia Viajes Andes",
+    "address": "Av. 16 de Julio 980",
+    "phone": "+591 2 7788990",
+    "website": "https://viajes-andes.test",
+    "image": "images/biz-5.jpg",
+    "level": 3,
+    "category": "Turismo",
+    "notes": "Tours a montañas y rutas culturales"
+  },
+  {
+    "id": 6,
+    "name": "Clínica Salud Integral",
+    "address": "C. Arce 300",
+    "phone": "+591 2 7001122",
+    "website": "https://clinica-salud.test",
+    "image": "images/biz-6.jpg",
+    "level": 2,
+    "category": "Salud",
+    "notes": "Atención primaria y especialidades"
+  },
+  {
+    "id": 7,
+    "name": "Arte y Diseño LP",
+    "address": "Zona Sopocachi 120",
+    "phone": "+591 2 7019876",
+    "website": "https://arteydiseno.test",
+    "image": "images/biz-7.jpg",
+    "level": 1,
+    "category": "Diseño",
+    "notes": "Talleres y venta de piezas únicas"
+  }
+]
