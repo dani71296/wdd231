@@ -55,7 +55,7 @@ function cardHTML(m) {
     <article class="member-card" data-id="${m.id}">
       <img src="${m.image}" alt="${m.name} - logo" onerror="this.src='images/placeholder.png'">
       <div class="member-info">
-        <h3>${m.name} <span class="badge ${levelClass(m.level)}">${levelLabel(m.level)}</span></h3>
+        <h3>${m.name} </h3>
         <p class="muted">${m.category} · ${m.address}</p>
         <p class="muted">Tel: ${m.phone}</p>
         <div class="member-actions">
