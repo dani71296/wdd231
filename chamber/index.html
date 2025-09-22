@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cámara de Comercio - La Paz | Home</title>
+  <meta name="description" content="Página principal de la Cámara de Comercio de La Paz. Descubre eventos, clima y miembros destacados.">
+  <meta name="author" content="Israel Tudela">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cámara de Comercio - La Paz | Home">
+  <meta property="og:description" content="Descubre eventos, clima y miembros destacados de la Cámara de Comercio de La Paz.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://tu-dominio-o-github.io/camara/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cámara de Comercio - La Paz | Home">
+  <meta name="twitter:description" content="Descubre eventos, clima y miembros destacados de la Cámara de Comercio de La Paz.">
+  <meta name="twitter:image" content="images/og-image.jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/directorystyle.css">
+
+  <!-- Scripts -->
+  <script type="module" src="./scripts/spotlights.js" defer></script>
+  <script src="./scripts/weather.js" defer></script>
+</head>
+<body>
+  <!-- Header / navegación -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="./images/icons8-website-50.png" alt="logo camara" class="brand-logo" />
+        <span class="brand-title">Chamber of Commerce - La Paz</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container main-content">
+    <!-- Hero Section -->
+    <section id="hero">
+      <img src="images/hero.jpg" alt="Chamber Hero Image">
+      <a href="join.html" class="cta-button">Join the Chamber</a>
+    </section>
+
+    <!-- Current Events -->
+    <section id="events">
+      <h2>Current Events</h2>
+      <ul>
+        <li>Event 1 - 21/09/25 & Puebla Mexico</li>
+        <li>Event 2 - 30/09/25 & La Paz Bolivia</li>
+        <li>Event 3 - 10/10/25 & Cali Colombia</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather">
+      <h2>Weather</h2>
+      <div id="current-weather"></div>
+      <div id="forecast"></div>
+    </section>
+
+    <!-- Member Spotlights -->
+    <section id="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-cards" class="cards-container"></div>
+    </section>
+  </main>
+
+  <!-- Footer consistente -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="contact">
+        <h4>Contact</h4>
+        <p>Chamber of Commerce - La Paz<br/>
+           Street Falsa 123, La Paz, Bolivia<br/>
+           Pho: +591 2 1234567<br/>
+           Email: info@camara-lapaz.test
+        </p>
+      </div>
+
+      <div class="about">
+        <h4>Development</h4>
+        <p>Develop by: <strong>Israel Tudela</strong><br/>
+           Course: WDD 231<br/>
+           Last modification: <span id="lastModified">—</span>
+        </p>
+      </div>
+
+      <div class="copyright">
+        <p>© <span id="copyYear"></span> Chamber of Commerce - La Paz</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer scripts -->
+  <script type="module" src="./scripts/homefooter.js"></script>
+</body>
+</html>

@@ -1,4 +1,7 @@
-// script.js (module)
+// script.js
+import members from '../data/members.js'; // Importa directamente el módulo
+
+// DOM Elements
 const membersContainer = document.getElementById('members');
 const searchInput = document.getElementById('search');
 const gridBtn = document.getElementById('gridBtn');
@@ -8,29 +11,18 @@ const copyYearEl = document.getElementById('copyYear');
 const navToggle = document.querySelector('.nav-toggle');
 const navList = document.getElementById('nav-list');
 
-let members = [];
 let view = localStorage.getItem('membersView') || 'grid'; // 'grid' or 'list'
 
-// nav toggle (mobile)
+// ====================
+// Nav toggle (mobile)
 navToggle?.addEventListener('click', () => {
   const expanded = navToggle.getAttribute('aria-expanded') === 'true';
   navToggle.setAttribute('aria-expanded', String(!expanded));
   navList.style.display = expanded ? 'none' : 'flex';
 });
 
-// fetch members.json using async/await
-async function loadMembers() {
-  try {
-    const res = await fetch('data/members.json', { cache: 'no-store' });
-    if (!res.ok) throw new Error('No se pudo cargar members.json');
-    members = await res.json();
-    renderMembers();
-  } catch (err) {
-    membersContainer.innerHTML = `<p class="error">Error al cargar miembros: ${err.message}</p>`;
-    console.error(err);
-  }
-}
-
+// ====================
+// Render Members
 function renderMembers(filter = '') {
   const q = filter.trim().toLowerCase();
   const data = members.filter(m =>
@@ -49,13 +41,14 @@ function renderMembers(filter = '') {
   }
 }
 
-// card HTML (grid)
+// ====================
+// Templates
 function cardHTML(m) {
   return `
     <article class="member-card" data-id="${m.id}">
       <img src="${m.image}" alt="${m.name} - logo" onerror="this.src='images/placeholder.png'">
       <div class="member-info">
-        <h3>${m.name} </h3>
+        <h3>${m.name}</h3>
         <p class="muted">${m.category} · ${m.address}</p>
         <p class="muted">Tel: ${m.phone}</p>
         <div class="member-actions">
@@ -67,7 +60,6 @@ function cardHTML(m) {
   `;
 }
 
-// list HTML
 function listHTML(m) {
   return `
     <div class="list-item" data-id="${m.id}">
@@ -94,30 +86,46 @@ function levelClass(l) {
   return 'level-1';
 }
 
-// toggle view buttons
-gridBtn.addEventListener('click', () => { view = 'grid'; saveView(); renderMembers(searchInput.value); setPressed(); });
-listBtn.addEventListener('click', () => { view = 'list'; saveView(); renderMembers(searchInput.value); setPressed(); });
+// ====================
+// Toggle view buttons
+gridBtn?.addEventListener('click', () => {
+  view = 'grid';
+  saveView();
+  renderMembers(searchInput.value);
+  setPressed();
+});
+listBtn?.addEventListener('click', () => {
+  view = 'list';
+  saveView();
+  renderMembers(searchInput.value);
+  setPressed();
+});
 
 function setPressed() {
-  gridBtn.setAttribute('aria-pressed', view === 'grid');
-  listBtn.setAttribute('aria-pressed', view === 'list');
+  gridBtn?.setAttribute('aria-pressed', view === 'grid');
+  listBtn?.setAttribute('aria-pressed', view === 'list');
 }
-function saveView() { localStorage.setItem('membersView', view); }
 
-// search
-searchInput.addEventListener('input', (e) => {
+function saveView() {
+  localStorage.setItem('membersView', view);
+}
+
+// ====================
+// Search
+searchInput?.addEventListener('input', (e) => {
   renderMembers(e.target.value);
 });
 
-// set copyright year and last modified
+// ====================
+// Footer Dates
 function setFooterDates() {
   copyYearEl.textContent = new Date().getFullYear();
-  // document.lastModified returns a string, may be empty if served from file:// in some browsers.
   const lm = document.lastModified ? new Date(document.lastModified) : null;
   lastModifiedEl.textContent = lm ? lm.toLocaleString() : 'No disponible';
 }
 
-// init
+// ====================
+// Init
 setPressed();
 setFooterDates();
-loadMembers();
+renderMembers();
