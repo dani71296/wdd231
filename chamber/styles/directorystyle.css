@@ -164,3 +164,29 @@
     padding: 0.8rem 1.5rem;
   }
 }
+/* ===== Home Footer Extra Styles ===== */
+#home-footer {
+  background: #0b1220;
+  color: #d1d5db;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #2a2f3a;
+}
+
+#home-footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #c7ccd3;
+}
+
+#home-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#home-footer a:hover {
+  color: #fff;
+}
