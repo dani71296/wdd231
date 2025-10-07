@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cámara de Comercio - La Paz | Discover</title>
+  <meta name="description" content="Descubre los puntos de interés y atractivos de La Paz con la Cámara de Comercio." />
+  <meta name="author" content="Israel Tudela" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cámara de Comercio - La Paz | Discover" />
+  <meta property="og:description" content="Explora los atractivos de La Paz y conoce la ciudad con la Cámara de Comercio." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://tu-dominio-o-github.io/camara/discover.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cámara de Comercio - La Paz | Discover" />
+  <meta name="twitter:description" content="Explora los atractivos de La Paz con la Cámara de Comercio." />
+  <meta name="twitter:image" content="images/og-image.jpg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/directorystyle.css" />
+  
+
+</head>
+<body>
+  <!-- Header / navegación -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="directory.html">
+        <img src="./images/icons8-website-50.png" alt="logo camara" class="brand-logo" />
+        <span class="brand-title">Chamber of Commerce - La Paz</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mensaje de última visita -->
+  <section class="last-visit-message container" id="visitMessage">
+    <!-- Mensaje generado por JS -->
+  </section>
+
+  <!-- Grid de items de interés -->
+  <main class="container main-content">
+    <section id="discover-grid" class="discover-grid">
+      <!-- Tarjetas generadas por JS -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="contact">
+        <h4>Contact</h4>
+        <p>Chamber of Commerce - La Paz<br/>
+           Street Falsa 123, La Paz, Bolivia<br/>
+           Pho: +591 2 1234567<br/>
+           Email: info@camara-lapaz.test
+        </p>
+      </div>
+
+      <div class="about">
+        <h4>Development</h4>
+        <p>Develop by: <strong>Israel Tudela</strong><br/>
+           Course: WDD 231<br/>
+           Last modification: <span id="lastModified">—</span>
+        </p>
+      </div>
+
+      <div class="copyright">
+        <p>© <span id="copyYear"></span> Chamber of Commerce - La Paz</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="./scripts/discoverscript.js"></script>
+  <script type="module" src="./data/discover.js"></script>
+
+</body>
+</html>
