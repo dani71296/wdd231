@@ -1,0 +1,17 @@
+[
+  {"id":1,"marca":"Honda","modelo":"CB190R","anio":2023,"precio":3500,"imagen":"images/moto1.webp","descripcion":"Motorcycle in excellent condition, single owner"},
+  {"id":2,"marca":"Yamaha","modelo":"FZ-S","anio":2022,"precio":3200,"imagen":"images/moto2.webp","descripcion":"Perfect for city riding"},
+  {"id":3,"marca":"Suzuki","modelo":"Gixxer","anio":2021,"precio":3000,"imagen":"images/moto3.webp","descripcion":"Ideal for beginners"},
+  {"id":4,"marca":"KTM","modelo":"Duke 200","anio":2023,"precio":4000,"imagen":"images/moto4.webp","descripcion":"Sporty and agile"},
+  {"id":5,"marca":"Bajaj","modelo":"Pulsar NS200","anio":2022,"precio":3300,"imagen":"images/moto5.webp","descripcion":"Comfort and performance"},
+  {"id":6,"marca":"Honda","modelo":"CB500X","anio":2023,"precio":6000,"imagen":"images/moto6.webp","descripcion":"Perfect for long trips"},
+  {"id":7,"marca":"Yamaha","modelo":"MT-03","anio":2021,"precio":4500,"imagen":"images/moto7.webp","descripcion":"Naked style, powerful"},
+  {"id":8,"marca":"KTM","modelo":"RC 390","anio":2022,"precio":4200,"imagen":"images/moto8.webp","descripcion":"Sporty for track and city"},
+  {"id":9,"marca":"Suzuki","modelo":"V-Strom 250","anio":2023,"precio":5500,"imagen":"images/moto9.webp","descripcion":"Adventure touring"},
+  {"id":10,"marca":"Bajaj","modelo":"Dominar 400","anio":2021,"precio":3800,"imagen":"images/moto10.webp","descripcion":"Balanced comfort and power"},
+  {"id":11,"marca":"Honda","modelo":"CBR500R","anio":2023,"precio":6200,"imagen":"images/moto11.webp","descripcion":"Sporty and reliable"},
+  {"id":12,"marca":"Yamaha","modelo":"R3","anio":2022,"precio":5000,"imagen":"images/moto12.webp","descripcion":"Sporty style for city riding"},
+  {"id":13,"marca":"KTM","modelo":"390 Adventure","anio":2023,"precio":5800,"imagen":"images/moto13.webp","descripcion":"Perfect for trips and tough roads"},
+  {"id":14,"marca":"Suzuki","modelo":"GSX-S750","anio":2021,"precio":7000,"imagen":"images/moto14.webp","descripcion":"Powerful naked bike"},
+  {"id":15,"marca":"Bajaj","modelo":"Pulsar RS200","anio":2022,"precio":3700,"imagen":"images/moto15.webp","descripcion":"Sporty style, ideal for city"}
+]

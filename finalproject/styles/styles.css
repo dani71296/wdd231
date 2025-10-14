@@ -1,0 +1,166 @@
+/* Reset simple */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+/* Header & Nav */
+header { background:#222; padding:1rem; }
+nav a { color:#fff; margin-right:1rem; text-decoration:none; }
+nav a:hover { text-decoration:underline; }
+
+/* Main */
+main { margin:2rem 0; }
+
+/* Motos grid */
+.motos-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:1rem;
+}
+
+.moto-card {
+  border:1px solid #ccc;
+  padding:1rem;
+  border-radius:5px;
+  background:#f9f9f9;
+  text-align:center;
+}
+
+.moto-card img { width:100%; height:auto; border-radius:5px; }
+
+/* Modal */
+.modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); justify-content:center; align-items:center; }
+.modal-content { background:#fff; padding:2rem; border-radius:5px; position:relative; max-width:500px; width:90%; }
+.modal-close { position:absolute; top:0.5rem; right:1rem; cursor:pointer; font-size:1.5rem; }
+
+/* Form */
+form { display:flex; flex-direction:column; max-width:400px; margin:0 auto; }
+form label { margin-top:1rem; }
+form input, form textarea { padding:0.5rem; margin-top:0.5rem; border:1px solid #ccc; border-radius:5px; }
+form button { margin-top:1rem; padding:0.7rem; background:#222; color:#fff; border:none; cursor:pointer; }
+form button:hover { background:#555; }
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: url('../images/hero-bg.webp') center/cover no-repeat;
+  min-height: 70vh; /* ocupa gran parte de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: #003366;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #0055aa;
+}
+
+/* Info section */
+.info {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* ocupa todo el espacio disponible antes del footer */
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+form input, form textarea {
+  font-size: 1rem;
+  padding: 0.8rem;
+}
+/* Tip de mecánica */
+.tip-mecanica {
+  background: #f4f4f4;
+  padding: 2rem 1rem;
+}
+
+.tip-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tip-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tip-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tip-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.negro {
+  color: rgb(12, 12, 12);
+}

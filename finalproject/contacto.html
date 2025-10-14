@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto de reventa de motos">
+  <meta name="author" content="Israel Tudela">
+  <title>Reventa de Motos - Contacto</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="motos.html">Motorcycles</a>
+    <a href="contacto.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Contact</h1>
+  <form action="contacto-action.html" method="POST">
+    <label for="nombre">Name:</label>
+    <input type="text" id="nombre" name="nombre" required placeholder="Your full name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="email@example.com">
+
+    <label for="mensaje">Message:</label>
+    <textarea id="mensaje" name="mensaje" rows="8" placeholder="Write your message here" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</main>
+
+<footer>
+  <p>
+    &copy; <span id="year"></span> | Daniel Israel Tudela Pacheco | Bolivia
+  </p>
+  <p id="lastModified"></p>
+  <p>Demo Video: <a href="https://youtu.be/tu_video" target="_blank">Watch Here</a></p>
+</footer>
+
+
+</body>
+</html>
